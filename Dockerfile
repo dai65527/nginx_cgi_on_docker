@@ -6,7 +6,7 @@
 #    By: dnakano <dnakano@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/22 09:48:01 by dnakano           #+#    #+#              #
-#    Updated: 2021/02/25 18:22:01 by dnakano          ###   ########.fr        #
+#    Updated: 2021/02/25 19:22:24 by dnakano          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,8 @@ COPY    ./srcs/default /etc/nginx/sites-available/default
 RUN     chmod 644 /etc/nginx/sites-available/default 
 
 # copy cgi files
-COPY    ./srcs/perl.cgi /usr/lib/cgi-bin/
-RUN     chmod 755 /usr/lib/cgi-bin/
+COPY    ./srcs/cgifiles /usr/lib/cgi-bin/
+RUN     chmod -R 755 /usr/lib/cgi-bin/
 
 # copy entrypoint.sh
 COPY    ./srcs/entrypoint.sh /

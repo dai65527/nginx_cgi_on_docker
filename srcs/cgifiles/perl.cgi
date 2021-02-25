@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 print "Content-Type: text/html\n\n";
-print "<h1>Hello CGI!!</h1>\n";
+print "<h1>Hello perl.cgi !!</h1>\n";
 print "<p>AUTH_TYPE = \"$ENV{'AUTH_TYPE'}\"</p>\n";
 print "<p>CONTENT_LENGTH = \"$ENV{'CONTENT_LENGTH'}\"</p>\n";
 print "<p>CONTENT_TYPE = \"$ENV{'CONTENT_TYPE'}\"</p>\n";
