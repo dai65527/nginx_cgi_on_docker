@@ -6,7 +6,7 @@
 #    By: dnakano <dnakano@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/22 09:48:01 by dnakano           #+#    #+#              #
-#    Updated: 2021/02/25 19:22:24 by dnakano          ###   ########.fr        #
+#    Updated: 2021/03/04 15:52:01 by dnakano          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ RUN     apt-get update && apt-get -y upgrade \
         && apt-get -y install \
             nginx \
             fcgiwrap \
-            perl
+            perl \
+            vim
 
 # enable fcgiwrap config of nginx
 RUN     cp /usr/share/doc/fcgiwrap/examples/nginx.conf /etc/nginx/fcgiwrap.conf \

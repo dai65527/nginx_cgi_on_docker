@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+print "Content-Type: text/html\n\n";
+print "<h1>Hello perl.cgi !!</h1>\n";
+print "<p>AUTH_TYPE = \"$ENV{'AUTH_TYPE'}\"</p>\n";
+print "<p>CONTENT_LENGTH = \"$ENV{'CONTENT_LENGTH'}\"</p>\n";
+print "<p>CONTENT_TYPE = \"$ENV{'CONTENT_TYPE'}\"</p>\n";
+print "<p>GATEWAY_INTERFACE = \"$ENV{'GATEWAY_INTERFACE'}\"</p>\n";
+print "<p>PATH_INFO = \"$ENV{'PATH_INFO'}\"</p>\n";
+print "<p>PATH_TRANSLATED = \"$ENV{'PATH_TRANSLATED'}\"</p>\n";
+print "<p>QUERY_STRING = \"$ENV{'QUERY_STRING'}\"</p>\n";
+print "<p>REMOTE_ADDR = \"$ENV{'REMOTE_ADDR'}\"</p>\n";
+print "<p>REMOTE_IDENT = \"$ENV{'REMOTE_IDENT'}\"</p>\n";
+print "<p>REMOTE_USER = \"$ENV{'REMOTE_USER'}\"</p>\n";
+print "<p>REQUEST_METHOD = \"$ENV{'REQUEST_METHOD'}\"</p>\n";
+print "<p>REQUEST_URI = \"$ENV{'REQUEST_URI'}\"</p>\n";
+print "<p>SCRIPT_NAME = \"$ENV{'SCRIPT_NAME'}\"</p>\n";
+print "<p>SERVER_NAME = \"$ENV{'SERVER_NAME'}\"</p>\n";
+print "<p>SERVER_PORT = \"$ENV{'SERVER_PORT'}\"</p>\n";
+print "<p>SERVER_PROTOCOL = \"$ENV{'SERVER_PROTOCOL'}\"</p>\n";
+print "<p>SERVER_SOFTWARE = \"$ENV{'SERVER_SOFTWARE'}\"</p>\n";
